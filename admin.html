@@ -43,68 +43,130 @@
                             <div class="card">
                                 <table class="table">
                                     <!-- table competense -->
+                                    <!-- head de mon tableau -->
                                     <thead>
                                         <tr>
-                                            <th scope="col">logo</th>
-                                            <th scope="col">titre</th>
-                                            <th scope="col">date</th>
-                                            <th scope="col">description</th>
+                                            <td scope="col">image</td>
+                                            <td scope="col">titre</td>
+                                            <td scope="col">date</td>
+                                            <td scope="col">description</td>
+                                            <td scope="col">actions</td>
                                         </tr>
+                                        <!--  -->
                                     </thead>
+                                    <!-- body tableau -->
                                     <tbody>
+                                        <!-- item n°1 tableau -->
                                         <tr>
-                                            <th scope="row">2</th>
+                                            <th scope="col">
+                                                <img style="height: 35px;" src="public/image/css.png" alt=" "></th>
                                             <td>Mark</td>
                                             <td>Otto</td>
                                             <td>@mdo</td>
+                                            <td>
+                                                <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#modalEdit">
+                                                    <i class="far fa-edit"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalDelete">
+                                                    <i class="far fa-trash-alt"></i>
+                                                </button>
+                                            </td>
                                         </tr>
+                                        <!-- item n°2 tableau -->
                                         <tr>
-                                            <th scope="row">3</th>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
+                                            <th scope="col">
+                                                <img style="height: 35px;" src="public/image/css.png" alt=" "></th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                            <td>
+                                                <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#modalEdit">
+                                                    <i class="far fa-edit"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalDelete">
+                                                    <i class="far fa-trash-alt"></i>
+                                                </button>
+                                            </td>
                                         </tr>
-                                        <tr>
-                                            <th scope="row">4</th>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                        </tr>
+
+
+
                                     </tbody>
+
                                 </table>
                             </div>
                         </div>
                     </div>
+                    <!-- Modal Edit -->
+                    <div class="modal fade" id="modalEdit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal Edit</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">...</div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                        Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / Modal Edit -->
 
+                    <!-- Modal Delete -->
+                    <div class="modal fade" id="modalDelete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal Delete</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">...</div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                        Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / Modal Delete -->
                     <!-- collaps presentation -->
-                    <div class="card">
-                        <div id="presentation" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <table class="table">
+                    <div class="card ">
+                        <div id="presentation " class="collapse " aria-labelledby="headingTwo " data-parent="#accordionExample ">
+                            <div class="card-body ">
+                                <table class="table ">
                                     <!-- table presentation -->
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">First</th>
-                                            <th scope="col">Last</th>
-                                            <th scope="col">Handle</th>
-                                        </tr>
-                                    </thead>
+                                    <tr>
+                                        <th scope="col ">#</th>
+                                        <th scope="col ">First</th>
+                                        <th scope="col ">Last</th>
+                                        <th scope="col ">Handle</th>
+                                    </tr>
                                     <tbody>
                                         <tr>
-                                            <th scope="row">1</th>
+                                            <th scope="row ">1</th>
                                             <td>Mark</td>
                                             <td>Otto</td>
                                             <td>@mdo</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">2</th>
+                                            <th scope="row ">2</th>
                                             <td>Jacob</td>
                                             <td>Thornton</td>
                                             <td>@fat</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">3</th>
+                                            <th scope="row ">3</th>
                                             <td>Larry</td>
                                             <td>the Bird</td>
                                             <td>@twitter</td>
@@ -116,35 +178,33 @@
                     </div>
 
                     <!-- collaps utilisateur -->
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <div id="user" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <table class="table">
+                    <div class="card ">
+                        <div class="card-header " id="headingThree ">
+                            <div id="user " class="collapse " aria-labelledby="headingThree " data-parent="#accordionExample ">
+                                <div class="card-body ">
+                                    <table class="table ">
                                         <!-- table utilisateur -->
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">First</th>
-                                                <th scope="col">Last</th>
-                                                <th scope="col">Handle</th>
-                                            </tr>
-                                        </thead>
+                                        <tr>
+                                            <th scope="col ">#</th>
+                                            <th scope="col ">First</th>
+                                            <th scope="col ">Last</th>
+                                            <th scope="col ">Handle</th>
+                                        </tr>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">1</th>
+                                                <th scope="row ">1</th>
                                                 <td>Mark</td>
                                                 <td>Otto</td>
                                                 <td>@mdo</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">2</th>
+                                                <th scope="row ">2</th>
                                                 <td>Jacob</td>
                                                 <td>Thornton</td>
                                                 <td>@fat</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">3</th>
+                                                <th scope="row ">3</th>
                                                 <td>Larry</td>
                                                 <td>the Bird</td>
                                                 <td>@twitter</td>
@@ -164,8 +224,8 @@
 
 </body>
 <!-- jQuery and JS bundle w/ Popper.js -->
-<script src="public/js/jquery.js"></script>
-<script src="public/js/popper.js"></script>
-<script src="public/js/bootstrap.js"></script>
+<script src="public/js/jquery.js "></script>
+<script src="public/js/popper.js "></script>
+<script src="public/js/bootstrap.js "></script>
 
 </html>
